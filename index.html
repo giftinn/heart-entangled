@@ -237,8 +237,8 @@ pointer-events:none;
 
 <!-- welcome -->
 <section class="card active">
-<h1>Special gift</h1>
-<p>For someone i love the most. <br>But you have to unlock it.</p>
+<h1>‎404: no one like you found</h1>
+<p> I made something special<br>But you have to unlock it first nyaaw !!</p>
 <button onclick="next()">Unlock</button>
 </section>
 
@@ -270,7 +270,7 @@ pointer-events:none;
 <div id="options"></div>
 
 <div class="score-box">
-Points: <span id="score">0</span> / 3
+Points: <span id="score">0</span> / 6
 </div>
 
 <p id="feedback"></p>
@@ -279,7 +279,7 @@ Points: <span id="score">0</span> / 3
 <!-- final -->
 <section class="card">
 
-<h1>Another Month of Us</h1>
+<h1>OURS</h1>
 
 <div class="lovebox">
 <div class="timer-title">TIME WITH YOU</div>
@@ -333,7 +333,7 @@ if(page===2)loadQuestion();
 ================================================= */
 
 let pinInput = '';
-const correctPin = '1402';
+const correctPin = '2703';
 const pinDisplay = document.getElementById("pin");
 
 function renderDots(){
@@ -381,9 +381,12 @@ function checkPin(){
 ================================================= */
 
 const questions=[
-{q:"When did we first meet? ", options:["14 February"," 24 January","22 January"],correct:2},
-{q:"Who loves the most?", options:["You","100% me","Both"],correct:2},
-{q:"What’s on my mind most of the time?", options:["Anime","Someone else","You (my pretty girlfriend"],correct:2}
+{q:"when did we first meet?", options:["february","march","april"],correct:1},
+{q:"what do i do when i miss you?", options:["text you","sleep","pretend i'm fine"],correct:0},
+{q:"who loves harder?", options:["me","you","both"],correct:2},
+{q:"what's the meaning of cisusalewipyy?", options:[" i miss you","i love you","i  hate you"],correct:1},
+{q:"what day is today?", options:["the day we met","my birthday","our mensiversary"],correct:2},
+{q:" will you stay with me for another month?", options:[" maybe","yes","no"],correct:1}
 ];
 
 let currentQ = 0;
@@ -448,7 +451,7 @@ function checkAnswer(i,btn){
 
 function startTimer(){
 
-    const start = new Date("2026-01-22T00:00:00");
+    const start = new Date("2026-03-27T00:00:00");
 
     setInterval(()=>{
 
@@ -477,16 +480,22 @@ function revealMemory(el){
     alreadyRevealed = true;
 
     el.innerHTML = `
-        <img src="pict.jpg"
+        <img src="pict1.jpg"
         style="width:100%;height:100%;object-fit:cover;border-radius:18px">
     `;
 
     const text = `
-      Even all the beautiful words in the world still wouldn’t be enough to explain how much you mean to me. Yet here you are, right in my life, and somehow that alone says everything. I admire the little things about you—the way you care about me, the way you talk, and how your eyes light up when you’re excited, especially when it’s with me. 
+      hayyi, keledkuu
 
-      With you, I’ve found a kind of peace I didn’t even know I was looking for. It’s a kind of comfort I didn’t know I needed until I found it in you. It’s something I can’t find anywhere else, no matter how hard I try. Every moment with you, no matter how small, feels important and meaningful.
+      it's only been one month, tapi kamu udah jadi part of my life. aku gak nyangka sesuatu yg se simple ini bisa kerasa se special ini, but here we aree !!
       
-      Thank you for being here with me, for every moment, every word, and every feeling we’ve shared. Happy 2nd mensiversary, sayangku. I’m so grateful for you, today and always. ❤️  
+      being with you isn't about perfection. kita gak bakal selalu get everything right, dan itu gapapaaa. karena buat akuu, ini gak pernah tentang sesuatu yang flawless—it's about something real. and what we have, this quiet, steady kind of love, means more than anything else ever could.
+      
+      timakasiw yaaa keledku udah stay, bahkan di hari-hari yang gak gampangg:( . thank u so much for being the person i can have deep conversation with, but also laugh about the most random stuff ever. makasih juga udah milih aku, again and again, bahkan dengan cara yang mungkin kamu sendiri ga sadar. i see it, i feel it, and i hold onto it more than you know.
+      
+      i love you, not just for who you are, tapi juga for how you make me feel—safe, understood, and at home. dan kalau ada satu hal yang aku yakin banget, it's this: in every passing day, in every quiet moment, i'll always find my way back to you.
+      
+      happy mensive, sayangku. i love you, more than yesterday, and still not as much as tomorrow. cisusalewipyy💗💗
       `;
 
     const paragraphs = text.trim().split(/\n\s*\n/);
